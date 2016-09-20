@@ -12,6 +12,7 @@ Install dependencies:
 npm install
 ```
 
+Run
 ```javascript
 npm start
 ```
