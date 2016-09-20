@@ -2,12 +2,8 @@ import { Component, NgModule, EventEmitter, ChangeDetectionStrategy } from '@ang
 import { Observable } from 'rxjs/Rx';
 import { Store, StoreModule } from '@ngrx/store';
 import { INCREMENT, DECREMENT, RESET } from './reducers/counter';
+import {AppState} from './store/AppState';
 // import { provideRouter, RouterConfig } from '@angular/router';
-// import { NewsDetailComponent } from './pages/news/news-detail.component';
-
-interface AppState {
-  counter: any;
-}
 
 @Component({
     selector: 'my-app',
@@ -22,8 +18,8 @@ interface AppState {
 export class AppComponent { 
     counter$: Observable<any>;
 
-    constructor(
-        private store : Store<number>
+    constructor(    
+        private store: Store<AppState>
     ){
         this.counter$ = store.select('counter');
     }
@@ -35,5 +31,6 @@ export class AppComponent {
     decrement(){
         this.store.dispatch({type: 'DECREMENT'});
     }
+
 }
 
