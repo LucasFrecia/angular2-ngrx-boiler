@@ -40,19 +40,7 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      },/*
-      '@angular2-material/button': {
-        main: './index.js',
-        defaultExtension: 'js'
       },
-      '@angular2-material/core': {
-        main: './index.js',
-        defaultExtension: 'js'
-      },
-      '@angular2-material/card': {
-        main: './index.js',
-        defaultExtension: 'js'
-      },*/
       'angular2-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
