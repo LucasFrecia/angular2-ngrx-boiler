@@ -21,9 +21,11 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-      // other libraries
+      
+      // rxjs
       'rxjs':                       'npm:rxjs',
     
+      // ngrx core and store bundles
       '@ngrx/core': 'npm:@ngrx/core/bundles/core.umd.js',
       '@ngrx/store': 'npm:@ngrx/store/bundles/store.umd.js',
 
@@ -38,7 +40,19 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },/*
+      '@angular2-material/button': {
+        main: './index.js',
+        defaultExtension: 'js'
       },
+      '@angular2-material/core': {
+        main: './index.js',
+        defaultExtension: 'js'
+      },
+      '@angular2-material/card': {
+        main: './index.js',
+        defaultExtension: 'js'
+      },*/
       'angular2-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
